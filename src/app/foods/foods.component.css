@@ -1,0 +1,12 @@
+.imagg{
+    height: 124px;
+    width: 124px;
+}
+
+.tb:hover{
+    background-color: azure;
+}
+
+.selected{
+    background-color: blueviolet;
+}

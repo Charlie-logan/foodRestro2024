@@ -1,0 +1,94 @@
+<div class="my-comp">
+  <img src="./assets/full.jpg" alt="" height="100%" width="100%">
+  <div class="b1">
+    <div class="box1">
+      <span class="box-reg">
+        <p [ngClass]="{'hidden': !isVisibleReg, 'show': isVisibleReg}" class="p1">Register</p>
+      </span>
+      <div class="card b2">
+        <img class="img2" src="./assets/img2.webp" alt="">
+        <div class="card-body z2" align="center">
+          <div class="form-group in">
+            <!-- <input type="text" class="form-control"> -->
+            <p class="p2">If You have not registered still now please Register</p>
+            <button class="btn btn-primary" (click)="onSelect1()">Register</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box2">
+      <div class="card b2">
+        <img class="img1" src="./assets/R.jpeg" alt="">
+        <div [ngClass]="{'hidden': !isVisibleReg, 'show': isVisibleReg}" class="card-body z1" align="center">
+          <img src="./assets/login-registration.png" alt="admin-logo" height="100%" width="100%">
+          <div class="form-group">
+            <div class="b3">
+              <div class="row">
+                <div class="col-lg-6">
+                  <label class="t1" for="">First Name: </label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-lg-6">
+                  <label class="t1" for="">Last Name: </label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <label class="t1" for="">Email Address : </label>
+              <input type="text" class="form-control">
+              <label class="t1" for="">Enter Password : </label>
+              <input type="text" class="form-control">
+              <label class="t1" for="">Confirm Password : </label>
+              <input type="text" class="form-control">
+              <br />
+              <button class="btn btn-primary" type="button">Submit</button>
+            </div>
+          </div>
+        </div>
+        <div [ngClass]="{'hidden': !isVisibleLog, 'show': isVisibleLog ,'transition-show': isVisibleLog}" class="z4">
+          <div class="form-group">
+            <div class="b4">
+              <img src="./assets/login.png" alt="" height="100%" width="100%">
+              <div>
+                <label for="">Email Address: </label>
+                <input type="text" class="form-control">
+              </div>
+              <div>
+                <label for="">Confirm Password: </label>
+                <input type="text" class="form-control">
+              </div>
+              <span>
+                <input type="checkbox">
+                <label for="">I accept all the Terms and Conditions...</label>
+              </span>
+              <span><button type="button" class="btn btn-success">Login</button></span>
+            </div>
+          </div>
+        </div>
+        <div [ngClass]="{'z5': isDefaultViewVisible, 'hidden': !isDefaultViewVisible}" class="z5">
+          <div class="b5">
+            <p class="p2">If you are a new User Click on Register on the Left</p>
+            <p class="p2">Else if you have already Registered then select Login on the Right</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box3">
+      <span class="box-log">
+        <p [ngClass]="{'hidden': !isVisibleLog, 'show': isVisibleLog}" class="p1">Login</p>
+      </span>
+      <div class="card b2">
+        <img src="./assets/img32.jpeg" alt="">
+        <div class="card-body z3" align="center">
+          <div class="form-group in">
+            <!-- <input type="text" class="form-control"> -->
+            <p class="p2">If You have already registered please Login Now</p>
+            <button class="btn btn-primary" (click)="onSelect2()">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
